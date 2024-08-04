@@ -3,11 +3,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>473 MVP Track and Field Club</title>
+    <link rel="stylesheet" href="/static/css/style.css">
 </head>
-<body>    
-    {% block content %}
+<body> 
+    <header>
+        <h1>473 MVP Track and Field Club</h1>
+    </header>  
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Athletes</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Register</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav> 
 
-
-    {% endblock %}
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>
+                    {% block hero %}
+                    {% endblock %}
+                </h2>
+                <p>
+                    {% block herocontent %}
+                    {% endblock %}
+                </p>                
+            </div>            
+        </section>
+        <section class="features">
+            <div class="feature">
+                <h3>
+                    {% block feature1 %}
+                    {% endblock %}
+                </h3>
+                <p>
+                    {% block feature1content %}
+                    {% endblock %}
+                </p>
+            </div>
+            <div class="feature">
+                <h3>
+                    {% block feature2 %}
+                    {% endblock %}
+                </h3>
+                <p>
+                    {% block feature2content %}
+                    {% endblock %}
+                </p>
+            </div>
+            <div class="feature">
+                <h3>
+                    {% block feature3 %}
+                    {% endblock %}
+                </h3>
+                <p>
+                    {% block feature3content %}
+                    {% endblock %}
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy 2024 473 MVP Track and Field Club. All Rights reserved</p>
+    </footer>
+    
 </body>
 </html>
